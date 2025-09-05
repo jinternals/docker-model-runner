@@ -7,7 +7,7 @@ This repository provides developers with a set of steps and artifacts to run LLM
 ## Step 1: Enable Model Runner
 
 ```shell
-docker desktop enable model-runner --tcp 12434
+docker desktop enable model-runner --tcp=12434
 ```
 
 Verify that the runner is active:
@@ -42,8 +42,8 @@ cd langchain-fastapi-demo
 python3 -m venv .venv
 source .venv/bin/activate   # macOS/Linux
 # or .venv\Scripts\Activate.ps1 on Windows
- pip install -r requirements.txt 
- uvicorn app.main:app --reload --port 808
+pip install -r requirements.txt 
+uvicorn app.main:app --reload --port 8080
 ```
 
 ---

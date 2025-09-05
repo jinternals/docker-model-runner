@@ -7,7 +7,7 @@ This repository provides developers with a set of steps and artifacts to run LLM
 ## Step 1: Enable Model Runner
 
 ```shell
-docker desktop enable model-runner --tcp 12434
+docker desktop enable model-runner --tcp=12434
 ```
 
 Verify that the runner is active:
@@ -38,6 +38,8 @@ http://localhost:3000/
 ## Step 4: Start the Application
 
 ```shell
+cd spring-demo
+
 mvn spring-boot:run
 ```
 
