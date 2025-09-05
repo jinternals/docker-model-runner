@@ -1,0 +1,15 @@
+###
+POST http://localhost:8080/chat
+Content-Type: application/json
+
+{
+  "question": "Hello"
+}
+
+###
+POST http://localhost:8080/embed
+Content-Type: application/json
+
+{
+  "text": "Hello"
+}

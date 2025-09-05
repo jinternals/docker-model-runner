@@ -1,0 +1,23 @@
+services:
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    ports:
+      - "3000:8080"
+    environment:
+      - OPENAI_API_BASE_URL=http://model-runner.docker.internal/engines/llama.cpp/v1
+      - OPENAI_API_KEY=na
+      - WEBUI_NAME=Docker Model Runner Interface
+    volumes:
+      - open-webui:/app/backend/data
+    models:
+      - llm
+      - embed
+
+models:
+  embed:
+    model: ai/mxbai-embed-large
+  llm:
+    model: ai/qwen3:8B-Q4_0
+
+volumes:
+  open-webui:

@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  ai:
+    openai:
+      api-key: "na"
+      base-url: "http://localhost:12434/engines"
+      chat:
+        options:
+          model: ai/qwen3:8B-Q4_0
+      embedding:
+        options:
+          model: ai/mxbai-embed-large
