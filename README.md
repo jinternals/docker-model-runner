@@ -24,7 +24,7 @@ A hands-on starter kit for wiring **Docker Model Runner (DMR)** into real apps.
 
 Most examples stop at one-off `curl` commands. This repository provides:
 
-- **Two working integrations:** Spring Boot (Spring AI) and Python (FastAPI + LangChain/OpenAI).
+- **Two working integrations:** Spring Boot (Spring AI) and Python (FastAPI + LangChain).
 - **A ready UI stack:** `docker-compose.yaml` wiring **Open WebUI** to DMR.
 - **Requests:** `test.http` Ready-to-run HTTP calls for VS Code/IntelliJ REST clients
 
