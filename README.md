@@ -26,5 +26,5 @@ Most examples stop at one-off `curl` commands. This repository provides:
 
 - **Two working integrations:** Spring Boot (Spring AI) and Python (FastAPI + LangChain/OpenAI).
 - **A ready UI stack:** `docker-compose.yaml` wiring **Open WebUI** to DMR.
-- **Copy-paste requests:** `test.http` for VS Code / IntelliJ REST clients to verify your setup end-to-end.
+- **Requests:** `test.http` Ready-to-run HTTP calls for VS Code/IntelliJ REST clients
 
